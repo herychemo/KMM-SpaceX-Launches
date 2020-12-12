@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i4z-4F-Ky0">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SpaceX Launches-->
+        <scene sceneID="NGY-9y-lsP">
+            <objects>
+                <viewController title="SpaceX Launches" id="i4z-4F-Ky0" customClass="MainViewController" customModule="iosApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lUQ-0X-Jpe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBJ-dT-RFj">
+                                <rect key="frame" x="169.5" y="64" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gAA-ty-ohL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fBJ-dT-RFj" firstAttribute="top" secondItem="gAA-ty-ohL" secondAttribute="top" constant="20" id="5Ln-JU-w22"/>
+                            <constraint firstItem="fBJ-dT-RFj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gAA-ty-ohL" secondAttribute="leading" id="TK9-Iw-sa1"/>
+                            <constraint firstItem="fBJ-dT-RFj" firstAttribute="centerX" secondItem="lUQ-0X-Jpe" secondAttribute="centerX" id="Yss-kB-Vq9"/>
+                            <constraint firstItem="gAA-ty-ohL" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fBJ-dT-RFj" secondAttribute="trailing" id="vcA-Kk-MBV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="SampleLabel" destination="fBJ-dT-RFj" id="Xzp-aV-hb3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mtQ-e7-2zo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="147"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
