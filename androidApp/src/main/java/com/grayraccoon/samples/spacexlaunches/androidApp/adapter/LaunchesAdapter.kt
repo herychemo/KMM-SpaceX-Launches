@@ -36,7 +36,7 @@ class LaunchesAdapter(
                 holder.launchSuccess.text = ctx.getString(R.string.no_data)
                 holder.launchSuccess.setTextColor(ContextCompat.getColor(ctx, R.color.colorNoData))
             }
-            item.launchSuccess!! -> {
+            true -> {
                 holder.launchSuccess.text = ctx.getString(R.string.successful)
                 holder.launchSuccess.setTextColor(ContextCompat.getColor(ctx, R.color.colorSuccessful))
             }
