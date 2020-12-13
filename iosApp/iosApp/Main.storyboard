@@ -12,29 +12,27 @@
         <!--SpaceX Launches-->
         <scene sceneID="NGY-9y-lsP">
             <objects>
-                <viewController title="SpaceX Launches" id="i4z-4F-Ky0" customClass="MainViewController" customModule="iosApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SpaceX Launches" id="i4z-4F-Ky0" customClass="MainViewController" customModule="SpaceX_Launches" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lUQ-0X-Jpe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBJ-dT-RFj">
-                                <rect key="frame" x="169.5" y="64" width="75" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="s9T-aM-X0Y" userLabel="LaunchesTableView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gAA-ty-ohL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="fBJ-dT-RFj" firstAttribute="top" secondItem="gAA-ty-ohL" secondAttribute="top" constant="20" id="5Ln-JU-w22"/>
-                            <constraint firstItem="fBJ-dT-RFj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gAA-ty-ohL" secondAttribute="leading" id="TK9-Iw-sa1"/>
-                            <constraint firstItem="fBJ-dT-RFj" firstAttribute="centerX" secondItem="lUQ-0X-Jpe" secondAttribute="centerX" id="Yss-kB-Vq9"/>
-                            <constraint firstItem="gAA-ty-ohL" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fBJ-dT-RFj" secondAttribute="trailing" id="vcA-Kk-MBV"/>
+                            <constraint firstItem="gAA-ty-ohL" firstAttribute="trailing" secondItem="s9T-aM-X0Y" secondAttribute="trailing" id="B6q-Gu-nkf"/>
+                            <constraint firstItem="s9T-aM-X0Y" firstAttribute="top" secondItem="gAA-ty-ohL" secondAttribute="top" id="US6-vH-Pwq"/>
+                            <constraint firstItem="gAA-ty-ohL" firstAttribute="bottom" secondItem="s9T-aM-X0Y" secondAttribute="bottom" id="jOP-W1-MHD"/>
+                            <constraint firstItem="s9T-aM-X0Y" firstAttribute="leading" secondItem="gAA-ty-ohL" secondAttribute="leading" id="y6u-so-sGJ"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="SampleLabel" destination="fBJ-dT-RFj" id="Xzp-aV-hb3"/>
+                        <outlet property="LaunchesTableView" destination="s9T-aM-X0Y" id="H5F-Oq-1Yq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mtQ-e7-2zo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -33,16 +33,16 @@ class LaunchesAdapter(
 
         when (item.launchSuccess) {
             null -> {
-                holder.launchSuccess.text = ctx.getString(R.string.unsuccessful)
-                holder.launchSuccess.setTextColor(ContextCompat.getColor(ctx, R.color.colorUnsuccessful))
+                holder.launchSuccess.text = ctx.getString(R.string.no_data)
+                holder.launchSuccess.setTextColor(ContextCompat.getColor(ctx, R.color.colorNoData))
             }
             item.launchSuccess!! -> {
                 holder.launchSuccess.text = ctx.getString(R.string.successful)
                 holder.launchSuccess.setTextColor(ContextCompat.getColor(ctx, R.color.colorSuccessful))
             }
             else -> {
-                holder.launchSuccess.text = ctx.getString(R.string.no_data)
-                holder.launchSuccess.setTextColor(ContextCompat.getColor(ctx, R.color.colorNoData))
+                holder.launchSuccess.text = ctx.getString(R.string.unsuccessful)
+                holder.launchSuccess.setTextColor(ContextCompat.getColor(ctx, R.color.colorUnsuccessful))
             }
         }
 
